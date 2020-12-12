@@ -1,3 +1,4 @@
+
 function rozkodujPesel(pesel) {
     //pobranie daty
     var rok = parseInt(pesel.substring(0, 2), 10);
@@ -53,6 +54,6 @@ function rozkodujPesel(pesel) {
   $('#button').bind('click', function() {
   
     var result = rozkodujPesel($('#pesel').val())
-    $('#result').html('poprawność: ' + (result.valid ? 'OK' : 'ERROR'));
+    $('#result').html((result.valid ? 'PODANY NUMER JEST POPRAWNY' : 'PODANA WARTOŚĆ JEST NIEPOPRAWNA'));
   });
   

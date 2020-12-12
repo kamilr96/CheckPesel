@@ -72,13 +72,24 @@ body {
     }
 
     #result {
-        margin-left: 420px;
+        margin-left: 840px;
         margin-top: 20px;
         border: none;
         border-radius: 5px;
-        color:#b1340e;
+        
         width: 230px;
         height: 46px;
         font-size: 15pt;
         font-weight: 900;
+        
+      text-transform: uppercase;
+      font-size: 24px;
+      text-shadow: 3px 3px 5px black;
+      color: aliceblue;
+      transition: transform .4s;
+    }
+
+    #result:hover {
+      color: #b1340e;
+      transform: scale(0.9);
     }
